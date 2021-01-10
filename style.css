@@ -1,0 +1,268 @@
+@import url("css/normalize.css");
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.clearfix::after,
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+html{
+    font-style: 100%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        color: #000000;
+        font-style: 1rem;
+        line-height: 1.375;
+        margin: 0;
+}
+
+.page_cell{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;;
+}
+
+.header{
+    border-bottom: 1px solid #ccc;
+    padding: 1.81rem 0;
+}
+.phone_number, 
+.email_address{
+    text-decoration: none;
+}
+.phone_number{
+    font-weight: 700;
+    font-size: 1.15625rem;
+    color: #000;
+}
+
+.email_address{
+    font-size: 1rem;
+    color: #808080;
+}
+
+.header_logo{
+    float: left;
+}
+
+.logo_picture{
+    max-width: 100%;
+}
+.header_contact{
+    float: right;
+    text-align: right;
+}
+
+.nav{
+    font-size: 1.1875rem;
+}
+.nav_list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.link{
+    color: #000;
+    text-decoration: underline;
+}
+
+.link:hover{
+    color: #f44336;
+}
+
+.nav_link{
+    text-decoration: none;
+    padding: 1.15rem;
+    display: block;
+}
+
+.slider_item{
+    padding-top: 33.7%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.slider .owl-dot span{
+    background: #fff;
+    border: 1px solid #ccc;
+    width: 1rem;
+    height: 1rem;
+    display: block;
+}
+
+.slider .owl-dot.acive span, 
+.slider .owl-dot:hover span{
+    background: #000;
+    border-color: #000;
+}
+
+.slider .owl-dot{
+    display: inline-block;
+    margin: 0 0.40625rem;
+}
+
+.slider .owl-dots{
+    text-align: center;
+    position: absolute;
+    bottom: 0.75rem;
+    left: 0;
+    right: 0;
+}
+
+.headline{
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin: 2.2rem 0;
+}
+
+.grid_item{
+    float: left;
+    margin-right: 1.7%;
+    width: 49.15%;
+    position: relative;
+    margin-bottom: 1.7%;
+}
+
+
+.grid_overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    transition: .5s;
+}
+
+.grid_overlay:hover{
+    background: rgba(0, 0, 0, .7);
+}
+
+.grid_picture{
+    min-width: 100%;
+    display: block;
+}
+
+.grid_link{
+    color: #fff;
+    text-align: center;
+    font-size: 1.8125rem;
+}
+
+.grid_text, 
+.icon-circle_picture{
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.icon_circle{
+    display: inline-block;
+    width: 6.25rem;
+    height: 6.25rem;
+    background: #ffb9b3;
+    text-align: center;
+    border-radius: 50%;
+    padding: 1.1rem;
+}
+
+.icon-circle_picture{
+    max-width: 100%;
+}
+
+.advantage{
+    display: flex;
+    flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+}
+
+.advantage_item{
+    width: 28%;
+    text-align: center;
+    margin-right: 8%;
+}
+
+.advantage_item:last-child,
+.grid_item:nth-of-type(2n){
+margin-right: 0;
+}
+
+.advantage_headline{
+    font-size: 1.25rem;
+    margin: 0 0 0.8rem;
+}
+
+.advantage_icon{
+    margin-bottom: 1.2rem;
+}
+
+.page_row--footer{
+    background: #595959;
+    color: #fff;
+    margin-top: 4.375rem;
+}
+
+.footer_copyright{
+    text-align: right;
+}
+
+.footer{
+    padding: 1rem 0;
+}
+
+.btn-nav{
+    border: 0;
+    background: none;
+    padding: 0.7rem;
+    cursor: pointer;
+    border-radius: 0.2rem;
+}
+
+.btn-nav:hover{
+    background: #dadada;
+}
+.btn-nav_line{
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 1px;
+    background: #000;
+    margin-bottom: 3px;
+}
+
+.btn-nav_line:last-child{
+    margin-bottom: 0;
+}
+
+.nav_btn{
+    text-align: right;
+    margin: 0.7rem 0;
+    display: none;
+}
+
